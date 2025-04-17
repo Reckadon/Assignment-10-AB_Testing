@@ -15,7 +15,7 @@ Using real-world data, this assignment will introduces us to key concepts in A/B
     ![categorical](image-2.png)
 1. __Split the dataset__
     ![soplit](image-3.png)
-1.__ Use the statsmodel’s proportions_ztest function to perform an independent two-sample z-test between Group A and Group B.__
+1. __Use the statsmodel’s proportions_ztest function to perform an independent two-sample z-test between Group A and Group B.__
     ![ztest](image-4.png)
 1. __Interpret the result: Is there a statistically significant difference in click-through rates between the two groups? Justify your answer.__
     In our A/B test on 10,000 users (with missing values dropped), we compared click-through rates (CTRs) for ads shown at the Top vs. Bottom positions. Using a two-sample z-test, we obtained `z = -1.137` and `p = 0.256` (> 0.05), so we accept H₀ that the two CTRs are equal. The negative z-score indicates Bottom-positioned ads achieved a lower CTR than Top-positioned ads.
